@@ -1,0 +1,15 @@
+url = 'https://awshomo.afip.gov.ar/sr-padron/webservices/personaServiceA9'
+
+const service = 'ws_sr_padron_a9'; 
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:a9="http://a9.soap.ws.server.puc.sr/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <a9:getPersona>
+         <token>?</token>
+         <sign>?</sign>
+         <cuitRepresentada>?</cuitRepresentada>
+         <idPersona>?</idPersona>
+      </a9:getPersona>
+   </soapenv:Body>
+</soapenv:Envelope>

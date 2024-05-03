@@ -1,0 +1,19 @@
+urls = 'https://testdia.afip.gob.ar/diirss/trabajoF931/F931.asmx';
+
+const service = 'trabajo_f931'; 
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+        <soapenv:Header/>
+        <soapenv:Body>
+            <tem:getRemEmpleado>
+                <tem:credencial>
+                    <tem:Token>${token}</tem:Token>
+                    <tem:Sign>${sing}</tem:Sign>
+                    <tem:CUITDelegado>${ctx.cuitRepresentada}</tem:CUITDelegado>
+                </tem:credencial>
+                <tem:cuitEmpleador>?</tem:cuitEmpleador>
+                <tem:cuilEmpleado>?</tem:cuilEmpleado>
+                <tem:periodo>?</tem:periodo>
+            </tem:getRemEmpleado>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -2,6 +2,12 @@
 # WebServices Afip.
 ## TESTING/HOMOLOGACIÓN.
 
+**Dependencias**
+
+`npm install openssl`
+`npm install fs`
+`npm install cheerio`
+
 **PRIMER PASO**
 1. *Asegurarse de tener instalado openssl y todas las dependecias que se solicitan*
 2. *Una vez se verifiquen y se instalen las dependencias, correr el primer archivo llamado:*
@@ -11,7 +17,7 @@
 
 **SEGUNDO PASO**
 1. *Acceder al stio de afip con su clave fiscal.*
-*[Stio Afip: ](https://auth.afip.gob.ar/contribuyente_/login.xhtml)*
+*[Stio Afip](https://auth.afip.gob.ar/contribuyente_/login.xhtml)*
 2. *Una vez dentro, fijarse en la parte de servicios, si tiene alguno con el siguiente nombre:*
 **WSASS - AUTOGESTIÓN CERTIFICADOS HOMOLOGACIÓN**
 

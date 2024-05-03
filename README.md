@@ -2,6 +2,22 @@
 # WebServices Afip.
 ## TESTING/HOMOLOGACIÓN.
 
+### **NOTA: Aclaracion**.
+- *Si los archivos se encuentra ya en la raiz del proyecto (los archivos que deben ser creados por los scripts) solamente tiene que seguir los siguientes pasos.*
+
+1. *Ejecutar el script llamado:* 
+`GenerarLoginTicket.js`
+2. *Ejecutar el script llamado:*
+`Login.js`
+3. *Ejecutar el script llamado:*
+`Services.js`
+
+**En el caso de que desee cambiar de servicio o mejor dicho WebService tendra que:**
+1. *Modificar el script: `GenerarLoginTocket.js` linea 25, cambiar el nombre del servicio al cual desee que afip le proporcione informacion, guardar el script.*
+2. *Ejecutar el script: `GenerarLoginTocket.js`.*
+4. *Ejecutar el script: `Login.js`.*
+3. *Modificar el script: `Services.js`, linea 25 y 27, que seria la url del servicio y el mensaje del servicio de Afip, guardar y ejecutar.*
+
 **Dependencias**
 
 `npm install openssl`
